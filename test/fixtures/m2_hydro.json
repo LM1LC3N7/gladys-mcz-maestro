@@ -1,0 +1,209 @@
+{
+  "node": {
+    "Id": "7c201fd8-42bd-4333-914d-0f5822070757§00000000-0000-0000-0000-000000000000§0a1b2c3d-7777-4a4a-8b8b-000000000007",
+    "ClassType": "Appliance",
+    "NodeType": "Appliance",
+    "Created": 1720000000,
+    "Modified": 1720000000,
+    "Name": "Chaudière granulés",
+    "Description": "",
+    "UniqueCode": "2211300000003",
+    "SensorSetTypeId": "7c201fd8-42bd-4333-914d-0f5822070757§00000000-0000-0000-0000-000000000000§0a1b2c3d-9999-4a4a-8b8b-000000000009",
+    "ModelId": "7c201fd8-42bd-4333-914d-0f5822070757§00000000-0000-0000-0000-000000000000§0a1b2c3d-8888-4a4a-8b8b-000000000008",
+    "TimezoneIANA": "Europe/Paris",
+    "IsBanned": false,
+    "IsLiveOnly": false
+  },
+  "model": {
+    "ModelName": "Hydro Stove - 1 Fan",
+    "ModelId": "7c201fd8-42bd-4333-914d-0f5822070757§00000000-0000-0000-0000-000000000000§0a1b2c3d-8888-4a4a-8b8b-000000000008",
+    "SensorSetTypeId": "7c201fd8-42bd-4333-914d-0f5822070757§00000000-0000-0000-0000-000000000000§0a1b2c3d-9999-4a4a-8b8b-000000000009",
+    "SensorIds": [],
+    "Properties": [],
+    "ModelConfigurations": [
+      {
+        "Timed": false,
+        "ConfigurationName": " Start&Stop",
+        "ConfigurationId": "cfg-hy-eco",
+        "Limitations": null,
+        "Configurations": [
+          {
+            "SensorName": "att_eco",
+            "Type": "boolean",
+            "Visible": true,
+            "Variants": [],
+            "SensorId": "sns-hy-att-eco",
+            "Enabled": true,
+            "Min": "",
+            "Max": "",
+            "Mappings": {}
+          }
+        ]
+      },
+      {
+        "Timed": false,
+        "ConfigurationName": "PUFFER",
+        "ConfigurationId": "cfg-hy-puffer",
+        "Limitations": null,
+        "Configurations": [
+          {
+            "SensorName": "set_vent_v1",
+            "Type": "int",
+            "Visible": true,
+            "Variants": ["auto", "silent"],
+            "SensorId": "sns-hy-puffer-v1",
+            "Enabled": true,
+            "Min": "0",
+            "Max": "5",
+            "Mappings": { "auto": 6, "silent": -1 }
+          },
+          {
+            "SensorName": "set_amb1",
+            "Type": "double",
+            "Visible": true,
+            "Variants": [],
+            "SensorId": "sns-hy-puffer-amb1",
+            "Enabled": true,
+            "Min": "15.0",
+            "Max": "40.0",
+            "Mappings": {}
+          }
+        ]
+      },
+      {
+        "Timed": true,
+        "ConfigurationName": "Spegnimento",
+        "ConfigurationId": "cfg-hy-power",
+        "Limitations": null,
+        "Configurations": [
+          {
+            "SensorName": "com_on_off",
+            "Type": "boolean",
+            "Visible": true,
+            "Variants": [],
+            "SensorId": "sns-hy-com-on-off",
+            "Enabled": true,
+            "Min": "",
+            "Max": "",
+            "Mappings": {}
+          }
+        ]
+      },
+      {
+        "Timed": false,
+        "ConfigurationName": "Set_amb_temp",
+        "ConfigurationId": "cfg-hy-setpoint",
+        "Limitations": null,
+        "Configurations": [
+          {
+            "SensorName": "set_amb1",
+            "Type": "double",
+            "Visible": true,
+            "Variants": [],
+            "SensorId": "sns-hy-set-amb1",
+            "Enabled": true,
+            "Min": "15.0",
+            "Max": "40.0",
+            "Mappings": {}
+          }
+        ]
+      },
+      {
+        "Timed": false,
+        "ConfigurationName": "set_vent_room",
+        "ConfigurationId": "cfg-hy-room-fan",
+        "Limitations": null,
+        "Configurations": [
+          {
+            "SensorName": "set_vent_v1",
+            "Type": "int",
+            "Visible": true,
+            "Variants": [],
+            "SensorId": "sns-hy-room-v1",
+            "Enabled": true,
+            "Min": "0",
+            "Max": "5",
+            "Mappings": {}
+          }
+        ]
+      },
+      {
+        "Timed": false,
+        "ConfigurationName": "Sensore Livello Pellet",
+        "ConfigurationId": "cfg-hy-pellet",
+        "Limitations": null,
+        "Configurations": [
+          {
+            "SensorName": "sens_liv_pellet",
+            "Type": "int",
+            "Visible": true,
+            "Variants": [],
+            "SensorId": "sns-hy-pellet",
+            "Enabled": true,
+            "Min": "",
+            "Max": "",
+            "Mappings": {}
+          }
+        ]
+      },
+      {
+        "Timed": false,
+        "ConfigurationName": "Reset Allarme",
+        "ConfigurationId": "cfg-hy-reset",
+        "Limitations": null,
+        "Configurations": [
+          {
+            "SensorName": "com_reset_allarm",
+            "Type": "boolean",
+            "Visible": true,
+            "Variants": [],
+            "SensorId": "sns-hy-reset",
+            "Enabled": true,
+            "Min": "",
+            "Max": "",
+            "Mappings": {}
+          }
+        ]
+      }
+    ]
+  },
+  "status": {
+    "Status": "unknown",
+    "stato_stufa": 3,
+    "fase_op": "on",
+    "sub_fase_op": null,
+    "mod_lav_att": null,
+    "set_pot_man": null,
+    "potenza_att": 5,
+    "set_amb1": 26,
+    "set_vent_v1": 1,
+    "temp_amb_install": 27.5,
+    "silent_enabled": false,
+    "silent": false,
+    "att_eco": true,
+    "sens_liv_pellet": true,
+    "sens_liv_pel": false,
+    "auto_pellet": 0,
+    "clean_in_prog": false,
+    "sm_nome_app": "M2S.HYD",
+    "temp_caldaia": 64.5,
+    "temp_puffer": 58,
+    "Description": "2211300000003",
+    "IsConnected": true,
+    "IsInError": false,
+    "BlockingEventId": null
+  },
+  "state": {
+    "temp_scheda": 49.9,
+    "potenza_att": 5,
+    "state": "on",
+    "temp_fumi": 186,
+    "att_eco": true,
+    "sens_liv_pellet": true,
+    "last_alarm": "A2",
+    "set_amb1": 26,
+    "temp_amb_install": 27.5,
+    "IsConnected": true,
+    "IsInError": false
+  }
+}

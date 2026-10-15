@@ -1,0 +1,26 @@
+gladys-mcz-maestro
+Copyright 2026 LM1LC3N7 and the gladys-mcz-maestro contributors
+
+This product is licensed under the Apache License, Version 2.0.
+
+It was written from the documentation provided by:
+
+- maestro_mcz
+  https://github.com/Robbe-B/maestro_mcz
+  Copyright Robbe-B and contributors, Apache License, Version 2.0.
+  The MCZ Maestro cloud protocol (endpoints, headers, request and answer
+  shapes), the configuration and sensor names of the stove models
+  (maestro/models/models.py), the state codes of the second generation and
+  the work-mode logic of the fans.
+
+- maestrogateway
+  https://github.com/Chibald/maestrogateway
+  Copyright Chibald, GNU General Public License v3.0.
+  Facts only, no code: the historic Maestro stove states and the alarm
+  codes they stand for.
+
+The test fixtures are fictional stoves shaped like the public diagnostics of
+the Home Assistant integration's users; no third-party data is copied.
+
+MCZ, Maestro and Maestro+ are trademarks of their respective owners. This
+project is not affiliated with, endorsed by or sponsored by MCZ Group.

@@ -1,0 +1,319 @@
+{
+  "node": {
+    "Id": "7c201fd8-42bd-4333-914d-0f5822070757§00000000-0000-0000-0000-000000000000§0a1b2c3d-3333-4a4a-8b8b-000000000003",
+    "ClassType": "Appliance",
+    "NodeType": "Appliance",
+    "Created": 1700000000,
+    "Modified": 1700000000,
+    "Name": "Stove kitchen",
+    "Description": "",
+    "UniqueCode": "1911140000002",
+    "SensorSetTypeId": "7c201fd8-42bd-4333-914d-0f5822070757§00000000-0000-0000-0000-000000000000§0a1b2c3d-6666-4a4a-8b8b-000000000006",
+    "ModelId": "7c201fd8-42bd-4333-914d-0f5822070757§00000000-0000-0000-0000-000000000000§0a1b2c3d-4444-4a4a-8b8b-000000000004",
+    "TimezoneIANA": "Europe/Brussels",
+    "IsBanned": false,
+    "IsLiveOnly": false
+  },
+  "model": {
+    "ModelName": "Air Stove - 1 Fan",
+    "ModelId": "7c201fd8-42bd-4333-914d-0f5822070757§00000000-0000-0000-0000-000000000000§0a1b2c3d-4444-4a4a-8b8b-000000000004",
+    "SensorSetTypeId": "7c201fd8-42bd-4333-914d-0f5822070757§00000000-0000-0000-0000-000000000000§0a1b2c3d-6666-4a4a-8b8b-000000000006",
+    "SensorIds": [],
+    "Properties": [],
+    "ModelConfigurations": [
+      {
+        "Timed": false,
+        "ConfigurationName": "Manuale",
+        "ConfigurationId": "cfg-m1-manual",
+        "Limitations": null,
+        "Configurations": [
+          {
+            "SensorName": "m1_set_vent_v1",
+            "Type": "int",
+            "Visible": true,
+            "Variants": ["auto"],
+            "SensorId": "sns-m1-manual-v1",
+            "Enabled": true,
+            "Min": "0",
+            "Max": "5",
+            "Mappings": { "auto": 6 }
+          },
+          {
+            "SensorName": "m1_potenza_att",
+            "Type": "int",
+            "Visible": true,
+            "Variants": [],
+            "SensorId": "sns-m1-manual-pot",
+            "Enabled": true,
+            "Min": "1",
+            "Max": "5",
+            "Mappings": {}
+          },
+          {
+            "SensorName": "m1_silent_enabled",
+            "Type": "boolean",
+            "Visible": true,
+            "Variants": ["on", "off"],
+            "SensorId": "sns-m1-manual-silent",
+            "Enabled": true,
+            "Min": "",
+            "Max": "",
+            "Mappings": { "on": true, "off": false }
+          }
+        ]
+      },
+      {
+        "Timed": false,
+        "ConfigurationName": "Dynamic",
+        "ConfigurationId": "cfg-m1-dynamic",
+        "Limitations": null,
+        "Configurations": [
+          {
+            "SensorName": "m1_set_vent_v1",
+            "Type": "int",
+            "Visible": true,
+            "Variants": ["auto"],
+            "SensorId": "sns-m1-dynamic-v1",
+            "Enabled": true,
+            "Min": "0",
+            "Max": "5",
+            "Mappings": { "auto": 6 }
+          },
+          {
+            "SensorName": "m1_silent_enabled",
+            "Type": "boolean",
+            "Visible": true,
+            "Variants": ["on", "off"],
+            "SensorId": "sns-m1-dynamic-silent",
+            "Enabled": true,
+            "Min": "",
+            "Max": "",
+            "Mappings": { "on": true, "off": false }
+          }
+        ]
+      },
+      {
+        "Timed": false,
+        "ConfigurationName": "Comfort",
+        "ConfigurationId": "cfg-m1-comfort",
+        "Limitations": null,
+        "Configurations": [
+          {
+            "SensorName": "m1_set_vent_v1",
+            "Type": "int",
+            "Visible": true,
+            "Variants": ["auto"],
+            "SensorId": "sns-m1-comfort-v1",
+            "Enabled": false,
+            "Min": "0",
+            "Max": "5",
+            "Mappings": { "auto": 6 }
+          }
+        ]
+      },
+      {
+        "Timed": false,
+        "ConfigurationName": "Overnight",
+        "ConfigurationId": "cfg-m1-overnight",
+        "Limitations": null,
+        "Configurations": [
+          {
+            "SensorName": "m1_set_vent_v1",
+            "Type": "int",
+            "Visible": true,
+            "Variants": ["auto"],
+            "SensorId": "sns-m1-overnight-v1",
+            "Enabled": false,
+            "Min": "0",
+            "Max": "5",
+            "Mappings": { "auto": 6 }
+          }
+        ]
+      },
+      {
+        "Timed": false,
+        "ConfigurationName": "Spegnimento",
+        "ConfigurationId": "cfg-m1-power",
+        "Limitations": null,
+        "Configurations": [
+          {
+            "SensorName": "m1_stato_stufa",
+            "Type": "int",
+            "Visible": true,
+            "Variants": ["on", "off"],
+            "SensorId": "sns-m1-stato-stufa",
+            "Enabled": true,
+            "Min": "",
+            "Max": "",
+            "Mappings": { "on": 1, "off": 40 }
+          }
+        ]
+      },
+      {
+        "Timed": false,
+        "ConfigurationName": "Start&Stop",
+        "ConfigurationId": "cfg-m1-eco",
+        "Limitations": null,
+        "Configurations": [
+          {
+            "SensorName": "m1_att_eco",
+            "Type": "boolean",
+            "Visible": true,
+            "Variants": ["on", "off"],
+            "SensorId": "sns-m1-att-eco",
+            "Enabled": true,
+            "Min": "",
+            "Max": "",
+            "Mappings": { "on": true, "off": false }
+          }
+        ]
+      },
+      {
+        "Timed": false,
+        "ConfigurationName": "Sensore Livello Pellet",
+        "ConfigurationId": "cfg-m1-pellet",
+        "Limitations": null,
+        "Configurations": [
+          {
+            "SensorName": "m1_sens_liv_pellet",
+            "Type": "int",
+            "Visible": true,
+            "Variants": [],
+            "SensorId": "sns-m1-pellet",
+            "Enabled": true,
+            "Min": "0",
+            "Max": "1",
+            "Mappings": {}
+          }
+        ]
+      },
+      {
+        "Timed": false,
+        "ConfigurationName": "Reset Allarme",
+        "ConfigurationId": "cfg-m1-reset",
+        "Limitations": null,
+        "Configurations": [
+          {
+            "SensorName": "m1_com_reset_allarm",
+            "Type": "int",
+            "Visible": true,
+            "Variants": ["reset"],
+            "SensorId": "sns-m1-reset",
+            "Enabled": true,
+            "Min": "255",
+            "Max": "255",
+            "Mappings": { "reset": 255 }
+          }
+        ]
+      },
+      {
+        "Timed": false,
+        "ConfigurationName": "Set_amb_temp",
+        "ConfigurationId": "cfg-m1-setpoint",
+        "Limitations": null,
+        "Configurations": [
+          {
+            "SensorName": "m1_set_amb1",
+            "Type": "double",
+            "Visible": true,
+            "Variants": [],
+            "SensorId": "sns-m1-set-amb1",
+            "Enabled": true,
+            "Min": "5.0",
+            "Max": "35.0",
+            "Mappings": {}
+          }
+        ]
+      },
+      {
+        "Timed": false,
+        "ConfigurationName": "Set_pot",
+        "ConfigurationId": "cfg-m1-level",
+        "Limitations": null,
+        "Configurations": [
+          {
+            "SensorName": "m1_potenza_att",
+            "Type": "int",
+            "Visible": true,
+            "Variants": [],
+            "SensorId": "sns-m1-potenza-att",
+            "Enabled": true,
+            "Min": "1",
+            "Max": "5",
+            "Mappings": {}
+          }
+        ]
+      },
+      {
+        "Timed": false,
+        "ConfigurationName": "set_v1",
+        "ConfigurationId": "cfg-m1-set-v1",
+        "Limitations": null,
+        "Configurations": [
+          {
+            "SensorName": "m1_silent_enabled",
+            "Type": "boolean",
+            "Visible": true,
+            "Variants": [],
+            "SensorId": "sns-m1-set-v1-silent",
+            "Enabled": true,
+            "Min": "",
+            "Max": "",
+            "Mappings": {}
+          },
+          {
+            "SensorName": "m1_set_vent_v1",
+            "Type": "int",
+            "Visible": true,
+            "Variants": ["0", "1", "2", "3", "4", "5", "auto"],
+            "SensorId": "sns-m1-set-v1-v1",
+            "Enabled": true,
+            "Min": "0",
+            "Max": "6",
+            "Mappings": { "0": 0, "1": 1, "2": 2, "3": 3, "4": 4, "5": 5, "auto": 6 }
+          }
+        ]
+      }
+    ]
+  },
+  "status": {
+    "Status": "Potenza 5",
+    "stato_stufa": 15,
+    "fase_op": null,
+    "sub_fase_op": null,
+    "mod_lav_att": "dynamic",
+    "set_pot_man": 5,
+    "set_amb1": 22,
+    "set_vent_v1": 5,
+    "set_vent_v2": 0,
+    "set_vent_v3": 0,
+    "temp_amb_install": 21,
+    "silent_enabled": false,
+    "crono_enabled": false,
+    "power_enabled": false,
+    "att_eco": true,
+    "sens_liv_pellet": false,
+    "sens_liv_pel": false,
+    "nome_banca_dati_sel": 8,
+    "Description": "1911140000002",
+    "IsConnected": true,
+    "IsInError": false
+  },
+  "state": {
+    "vel_real_ventola_fumi": 1650,
+    "vel_real_coclea": 1200,
+    "temp_scheda": 31,
+    "potenza_att": 5,
+    "state": "Potenza 5",
+    "temp_fumi": 165,
+    "mod_lav_att": "dynamic",
+    "att_eco": true,
+    "sens_liv_pellet": false,
+    "last_alarm": null,
+    "set_amb1": 22,
+    "temp_amb_install": 21,
+    "Description": "1911140000002",
+    "IsConnected": false,
+    "IsInError": false
+  }
+}
