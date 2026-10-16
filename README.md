@@ -9,8 +9,11 @@ back. **Unofficial, not affiliated with MCZ Group.**
 
 User documentation: [docs/en.md](docs/en.md) · [docs/fr.md](docs/fr.md).
 
-> Work in progress (0.1, not published to the store yet): announced on the
-> [Gladys forum](https://community.gladysassistant.com/t/integrations-home-assistant-les-plus-populaires-candidates-pour-des-integrations-externes-gladys/10385/178).
+> **In the Gladys store.** Install it from **Integrations**, or with **Install
+> from GitHub** and `https://github.com/LM1LC3N7/gladys-mcz-maestro`. First
+> version, tested against answers shaped like those of real stoves, not yet
+> against a real stove. Feedback and bug reports are welcome in the
+> [GitHub issues](https://github.com/LM1LC3N7/gladys-mcz-maestro/issues).
 
 Older MCZ stoves with **Easy Connect** use the Micronova Agua IOT cloud: see
 [gladys-agua-iot](https://github.com/LM1LC3N7/gladys-agua-iot). Palazzetti
@@ -71,7 +74,7 @@ confirmed the on/off toggle on a real stove. See [NOTICE](NOTICE).
 **Actions → Release → Run workflow** (patch / minor / major): bumps the
 version in `package.json` and the manifest, rolls `CHANGELOG.md`, tags, builds
 the multi-arch image to GHCR and publishes the GitHub Release. The
-`gladys-assistant-integration` topic is added at the first real release only.
+`gladys-assistant-integration` topic lists the repository in the Gladys store.
 
 ## License
 
