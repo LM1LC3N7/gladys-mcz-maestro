@@ -1,6 +1,6 @@
 {
   "name": "gladys-mcz-maestro",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Gladys Assistant external integration for MCZ pellet stoves with Maestro technology, through the MCZ cloud. Unofficial, not affiliated with MCZ Group.",
   "type": "module",

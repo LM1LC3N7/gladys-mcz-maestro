@@ -10,6 +10,8 @@ the notes of the version's GitHub Release.
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-10-16
+
 ### Added
 
 - Login to the MCZ Maestro cloud with the e-mail and the password of the
@@ -31,4 +33,5 @@ the notes of the version's GitHub Release.
   the reason when the stove itself is off the MCZ cloud.
 - "Test the connection" button.
 
-[Unreleased]: https://github.com/LM1LC3N7/gladys-mcz-maestro/commits/main
+[Unreleased]: https://github.com/LM1LC3N7/gladys-mcz-maestro/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/LM1LC3N7/gladys-mcz-maestro/releases/tag/v0.1.1
